@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CV Vadym Doroshevych</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/icon" href="img/ico.ico">
     <!-- Bootstrap -->
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,10 +42,12 @@
                         <img src="img/phone_icon.png" class="img-icon" alt="">
                         <span class="text" style="">+380508865793</span>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  left-information-list">
-                        <img src="img/email_icon.png" class="img-icon" alt="">
-                        <span class="text" style="">doroshevychv@gmail.com</span>
-                    </div>
+                    <a href="mailto:doroshevychv@gmail.com?subject=&amp;body=&amp;cc=&amp;bcc=">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  left-information-list">
+                            <img src="img/email_icon.png" class="img-icon" alt="">
+                            <span class="text links" style="">doroshevychv</span>
+                        </div>
+                    </a>
                     <a href="http://facebook.com/doroshevychv" target="_blank">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  left-information-list">
                             <img src="img/facebook_icon.png" class="img-icon" alt="" style="">
@@ -348,11 +351,11 @@
 <script>
 
     $(window).on('resize', function () {
-        if(document.documentElement.clientWidth < 768) {
+        if (document.documentElement.clientWidth < 748) {
             // alert("Hello");
             $(".sidebar-left").css("height", "auto");
             $(".information-personal").css("height", "auto");
-        }else {
+        } else {
 
             $(".sidebar-right").css("height", "auto");
             console.log($('.sidebar-right').height());
